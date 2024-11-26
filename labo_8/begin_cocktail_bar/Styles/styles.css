@@ -1,0 +1,88 @@
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+/* Header */
+header {
+
+    padding: 20px;
+    margin: 30px auto;
+    text-align: center;
+    color: #444444;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+body article {
+
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    color: #444444;
+    float: right;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+#cocktails{
+    background-image: url("../images/cocktail.gif");
+    background-repeat: repeat;
+    height: 70px;
+}
+
+
+
+
+footer {
+    display: block;
+    font-size: 0.6em;
+    color: black;
+    padding: 10px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+    width: 95%;
+
+}
+
+/* Sectie "What's playing at the Lounge" */
+section article {
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+
+}
+
+section article h1{
+    text-align: left;
+    color: #006699;
+}
+
+section article h2 {
+    text-align: left;
+    color: #006699;
+}
+
+section article p a{
+    color: #444444;
+}
+#guarantee{
+    background-image: url("../images/background.gif");
+    background-repeat: no-repeat;
+    background-color: #a7cece;
+    background-position: left top;
+    background-size: 1.8em;
+    margin: 30px;
+    text-align: center;
+    padding-left: 20px;
+    color: #444444;
+    border: dashed white;
+}
+
+
