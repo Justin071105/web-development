@@ -1,0 +1,114 @@
+/* Algemene styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #212529;
+}
+
+header {
+    background-color: #007bff; /* Primaire kleur */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* Artikelen styling */
+article {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+article ul {
+    padding-left: 20px;
+}
+
+article ul ul {
+    list-style-type: circle;
+}
+
+article a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Afbeeldingen */
+img {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+/* Tabel styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: center;
+}
+
+table thead {
+    background-color: #343a40;
+    color: white;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Secties en layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+/* Buttons (optioneel) */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
