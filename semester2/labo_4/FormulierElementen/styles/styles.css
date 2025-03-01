@@ -1,0 +1,13 @@
+div{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+}

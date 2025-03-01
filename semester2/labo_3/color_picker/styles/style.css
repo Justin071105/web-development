@@ -1,0 +1,11 @@
+.colorDemo {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0);
+}
+.slider {
+    width: 200px;
+    margin-bottom: 10px;
+}

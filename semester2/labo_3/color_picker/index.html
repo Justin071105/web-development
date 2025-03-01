@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Picker</title>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/style.css/">
+</head>
+<body>
+<section>
+    <p>Pas de sliders aan om de kleur van het blokje te wijzigen:</p>
+
+    <label>Rood: <input type="range" class="slider" id="red" value="0" min="0" max="255">
+        <span id="redValue">0</span></label><br>
+
+    <label>Groen: <input type="range" class="slider" id="green" value="0" min="0" max="255">
+        <span id="greenValue">0</span></label><br>
+
+    <label>Blauw: <input type="range" class="slider" id="blue" value="0" min="0" max="255">
+        <span id="blueValue">0</span></label>
+</section>
+
+<section>
+    <p>Voorbeeldkleur:</p>
+    <div class="colorDemo"></div>
+</section>
+
+
+</body>
+</html>
