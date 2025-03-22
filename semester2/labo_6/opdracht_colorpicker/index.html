@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+<div>
+    <div class="container">
+        <div class="sliders">
+            <div>
+                <input type="range" id="red-slider" min="0" max="255" />
+                <span>
+              <span>Red&nbsp;</span>
+              <span id="red-value">255</span>
+            </span>
+            </div>
+            <div>
+                <input type="range" id="green-slider" min="0" max="255" />
+                <span>
+              <span>Green&nbsp;</span>
+              <span id="green-value">128</span>
+            </span>
+            </div>
+            <div>
+                <input type="range" id="blue-slider" min="0" max="255" />
+                <span>
+              <span>Blue&nbsp;</span>
+              <span id="blue-value">128</span>
+            </span>
+            </div>
+        </div>
+        <div id="color-box"></div>
+
+    </div>
+    <div id="swatch-group">
+        <button id="save-button">Save Color</button>
+        <div id="swatch-box"></div>
+    </div>
+</div>
+</body>
+</html>
