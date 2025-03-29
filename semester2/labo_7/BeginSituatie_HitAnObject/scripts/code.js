@@ -1,0 +1,54 @@
+
+let global = {
+    IMAGE_COUNT: 5, // aantal figuren
+    IMAGE_SIZE: 48, // grootte van de figuur
+    IMAGE_PATH_PREFIX: "images/", // map van de figuren
+    IMAGE_PATH_SUFFIX: ".png", // extensie van de figuren
+    MOVE_DELAY: 3000, // aantal milliseconden voor een nieuwe afbeelding verschijnt
+    score: 0, // aantal hits
+    timeoutId: 0, // id van de timeout timer, zodat we die kunnen annuleren
+    img: null
+};
+
+const setup = () => {
+    global.img = document.querySelector('img')
+    let button = document.querySelector('button')
+    let scoredisplay = document.getElementById('scoredisplay')
+    button.addEventListener('click', ()=>{
+    global.img.addEventListener('click', () =>{
+        const imgName = global.img.src.split('/').pop();
+
+        if (imgName === '0.png') {
+            alert("boem");
+        }
+        else{
+            global.score++
+            scoredisplay.textContent = global.score
+        }
+        moveImg()
+        changeImg()
+    })
+    setInterval(() => {
+        changeImg()
+        moveImg()
+    }, 3000)
+})};
+
+const moveImg = () => {
+    let x = Math.random() * (600 - global.IMAGE_SIZE)
+    let y = Math.random() * (800 - global.IMAGE_SIZE)
+
+    global.img.style.position = "absolute";
+    global.img.style.left = x + 'px'
+    global.img.style.top = y + 'px'
+}
+
+const changeImg = () => {
+    global.img.src = `${global.IMAGE_PATH_PREFIX}${Math.floor(Math.random() * global.IMAGE_COUNT)}${global.IMAGE_PATH_SUFFIX}`
+
+}
+
+
+window.addEventListener("load", setup);
+
+
