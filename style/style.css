@@ -1,5 +1,6 @@
+/* Algemene opmaak */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f9;
     margin: 0;
@@ -9,11 +10,11 @@ body {
 
 /* Header styling */
 header {
-    background-color: #0056b3;
+    background-color: #004080;
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -21,37 +22,54 @@ header h1 {
     font-size: 2rem;
 }
 
-/* Container styling */
+/* Container */
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-}
-
-/* Lijst styling */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul > li {
-    margin-bottom: 20px;
-    padding: 15px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Lijst styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul > li {
+    margin-bottom: 10px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+ul > li:hover {
+    background: #eef5ff;
+}
+
 ul > li h2 {
-    margin: 0 0 10px;
-    color: #0056b3;
+    margin: 0;
+    color: #004080;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ol {
-    margin: 0;
+    margin: 10px 0 0 20px;
     padding-left: 20px;
+    display: none;
+}
+
+ol.active {
+    display: block;
 }
 
 ol > li {
@@ -59,11 +77,14 @@ ol > li {
 }
 
 ol > li a {
-    color: #0056b3;
+    color: #004080;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+    font-size: 20px;
 }
 
 ol > li a:hover {
+    color: #002d5a;
     text-decoration: underline;
 }
